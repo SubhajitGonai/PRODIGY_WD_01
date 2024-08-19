@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Timer with Clock</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="clock-container">
+            <div class="clock">
+                <div class="outer-clock-face">
+                    <div class="marking marking-one"></div>
+                    <div class="marking marking-two"></div>
+                    <div class="marking marking-three"></div>
+                    <div class="marking marking-four"></div>
+                    <div class="inner-clock-face">
+                        <div class="date-box">
+                            <span class="day"></span>
+                        </div>
+                        <div class="date-box">
+                            <span class="month"></span>
+                        </div>
+                        <div class="date-box">
+                            <span class="year"></span>
+                        </div>
+                        <!-- Add the day-of-week-box here -->
+                        <div class="day-of-week-box">
+                            <span class="day-of-week"></span>
+                        </div>
+                        <!-- Clock hands are positioned absolutely -->
+                        <div class="hand hour-hand"></div>
+                        <div class="hand min-hand"></div>
+                        <div class="hand second-hand"></div>
+                        <!-- Small round box for time of day -->
+                        <div class="time-of-day-box">
+                            <span class="time-of-day"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="time">
+                    <span class="hour">00</span>
+                    <span class="colon">:</span>
+                    <span class="minute">00</span>
+                    <span class="colon">:</span>
+                    <span class="second">00</span>
+                    <span class="colon ms-colon">:</span>
+                    <span class="millisecond">00</span>
+                </div>
+            </div>
+            <div class="right-panel">
+                <div class="lap-container"></div>
+                <div class="quote-box"></div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button class="start">Start</button>
+            <button class="pause">Pause</button>
+            <button class="reset">Reset</button>
+            <button class="lap">Lap</button>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
